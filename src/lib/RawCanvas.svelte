@@ -7,11 +7,11 @@
 
 	let canvasEl: HTMLCanvasElement;
 
-	let { onLoad, class: c, width, height, id, ...rive_props } = props;
+	let { onLoad, class: c, width, height, id, ...raw_props } = props;
 
 	onMount(() => {
 		const r = new rive.Rive({
-			...rive_props,
+			...raw_props,
 
 			canvas: canvasEl,
 			onLoad: (e) => {

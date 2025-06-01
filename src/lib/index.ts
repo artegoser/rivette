@@ -12,7 +12,9 @@ export type RawCanvasProps = Omit<RiveParameters, 'canvas' | 'onload' | 'onLoad'
 		id: string;
 	}>;
 
-export interface RivetteProps {
+export type RivetteProps = Omit<RiveParameters, 'canvas' | 'onload' | 'onLoad' | 'src'> & {
 	src: string;
-	onLoad: EventCallback;
-}
+	class?: string;
+	onLoad?: EventCallback;
+	id?: string;
+};
