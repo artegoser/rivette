@@ -26,8 +26,7 @@
 			...raw_props
 		});
 
-		window.onresize = () => r.resizeDrawingSurfaceToCanvas();
-
+		window.addEventListener('resize', () => r.resizeDrawingSurfaceToCanvas());
 		window
 			.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`)
 			.addEventListener('change', () => r.resizeDrawingSurfaceToCanvas());
