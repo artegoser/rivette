@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+	@apply bg-zinc-900 text-zinc-50;
+
+	background-image: radial-gradient(var(--color-zinc-800) 1px, transparent 0);
+	background-size: 20px 20px;
+	background-position: -10px -10px;
+}
